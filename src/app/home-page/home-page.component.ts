@@ -44,6 +44,9 @@ export class HomePageComponent implements OnInit, OnDestroy {
    */
   public pageIndex: number = 0;
 
+  /**
+   * The row height for the mat grids
+   */
   public rowHeight: string;
 
   /**
