@@ -36,6 +36,16 @@ body {
   }
 }
 
+.center-container-row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.button-link {
+  color: unset;
+}
+
 /* App loading Animation */
 .loader {
   border: 16px solid #f3f3f3;
