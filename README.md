@@ -9,9 +9,9 @@ This application is a simple application used to display the most popular movies
 To get this project running on your machine, you will need to do the following:
 
 1. Since this uses a thrid party API, you will need to get an API key from [The Movie DB's website](https://www.themoviedb.org/settings/api)
-1. Once you have created an account on their website copy and paste the key in the `apiKey variable` in the [environments.ts](https://github.com/DominicGMacMillan/movies/blob/main/src/environments/environment.ts) file and the [environments.prod.ts](https://github.com/DominicGMacMillan/movies/blob/main/src/environments/environment.prod.ts) if you plan on deploying this application.
+1. Once you have created an account on their website copy and paste the key in the `apiKey variable` in the [environment.ts](https://github.com/DominicGMacMillan/movies/blob/main/src/environments/environment.ts) file and the [environment.prod.ts](https://github.com/DominicGMacMillan/movies/blob/main/src/environments/environment.prod.ts) if you plan on deploying this application.
 1. Ensure [Node is installed](https://nodejs.org/en/download/) on your machine. This project was tested/used with Node v14.18.0
-1. Install [Angular CLI](https://github.com/angular/angular-cli) - this project was generated with version 12.2.9
+1. Install [Angular CLI](https://github.com/angular/angular-cli) - this project was generated with the cli version 12.2.9
 1. Run the command `npm install`
 1. Run the command `ng serve --open` - This should automatically open your browser to `http://localhost:4200/`
 1. Open the dev tools for your browser (eg. F12 for Chrome) and then switch the view to mobile view
@@ -30,3 +30,4 @@ To get this project running on your machine, you will need to do the following:
 1. Mat icons are currenlty coming from Google, if Google goes down our icons go with it
 1. Trailers are currently limited to YouTube and only the official trailers, If we want to show dirrent websites we will need a new approach
 1. Doesn't work well on 4k computer monitors
+1. Whenever you go back to the popular movies page from the detail page, it loses its page index and so you start again at the top
