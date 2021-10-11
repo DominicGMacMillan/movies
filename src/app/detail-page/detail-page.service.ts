@@ -13,7 +13,7 @@ import {
   IMovieVideoUI,
   IMovieDetailsAPIResponse,
 } from './detail-page.types';
-import { environment } from '../../environments/environment.prod';
+import { environment } from '../../environments/environment';
 
 @Injectable({
   providedIn: 'root',
