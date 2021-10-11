@@ -1,0 +1,37 @@
+
+<ng-container *ngIf="!noInfo; else noInfoBlock">
+    <dm-infinite-scroll (scrolled)="onScroll()">
+
+        <!-- Movie grid -->
+        <!-- Hard codeded height here, look for a way to dynamically generate this -->
+        <mat-grid-list [cols]="breakpoint" (window:resize)="onResize($event)" [rowHeight]="rowHeight">
+    
+            <mat-grid-tile *ngFor="let item of moviesArray">
+                <a [routerLink]="['/detail-page', item.id]">
+                    <img src="{{item.imageURL}}" alt="{{item.title}}">
+                </a>
+                </mat-grid-tile>
+        </mat-grid-list>
+        <!-- ./Movie grid -->
+    
+    </dm-infinite-scroll>
+    
+    <div *ngIf="loading" class="center-container">
+        <mat-spinner [diameter]="50"></mat-spinner>
+    </div>
+</ng-container>
+
+
+<ng-template #noInfoBlock>
+    <div class="center-container">
+        <mat-icon class="no-info-icon">{{noInfo.matIcon}}</mat-icon>
+        <p class="no-info-text">
+            {{noInfo.message}}
+        </p>
+    </div>
+    
+</ng-template>
+
+
+
+

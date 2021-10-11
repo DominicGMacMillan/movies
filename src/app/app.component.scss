@@ -1,0 +1,21 @@
+.toolbar {
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.page-container {
+  overflow-y: auto;
+  // 100% - (header + footer)
+  height: calc(100% - 56px);
+  margin-top: 56px;
+}
+
+.footer {
+  clear: both;
+  position: relative;
+  height: 200px;
+  margin-top: -200px;
+}
